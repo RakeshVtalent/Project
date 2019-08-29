@@ -9,6 +9,10 @@ namespace GitCRUD.IRepositary
 {
    public interface IReposit
     {
+        List<Department> DepartmentData();
+        List<Employee> AllEmployeeData();
+        Employee InsertEmployee(Employee emp);
+        
         Employee UpdateEmployee(Employee emp);
     }
 }

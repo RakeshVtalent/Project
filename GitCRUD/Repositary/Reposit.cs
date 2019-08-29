@@ -9,6 +9,14 @@ namespace GitCRUD.Repositary
 {
     public class Reposit : IReposit
     {
+        public List<Department> listdept = new List<Department>();
+        public List<Departmet>AllDepartmetData()
+        {
+            try
+            {
+                using()
+            }
+        }
         public Employee UpdateEmployee(Employee emp)
         {
             try
@@ -25,5 +33,6 @@ namespace GitCRUD.Repositary
             }
             return emp;
         }
+
     }
 }
