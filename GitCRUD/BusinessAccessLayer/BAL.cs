@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using GitCRUD.IRepositary;
 using GitCRUD.Repositary;
+using GitCRUD.Models;
 
 namespace GitCRUD.BusinessAccessLayer
 {
@@ -13,6 +14,10 @@ namespace GitCRUD.BusinessAccessLayer
         public BAL(Reposit _Iobj)
         {
             Iobj = _Iobj;
+        }
+        public Employee UpdateEmployee(Employee emp)
+        {
+            return Iobj.UpdateEmployee(emp);
         }
     }
 }
